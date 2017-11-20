@@ -17,7 +17,7 @@
                     vehicle = new Truck();
                     break;
             }
-            vehicle.Build();
+            vehicle?.Build();
             return vehicle;
         }
     }

@@ -51,7 +51,7 @@ namespace Fabryka
                     threads.ForEach(x => x.Join());
                     threads.Clear();
 
-                    Console.WriteLine(vehicles.Sum(x => x.Expense));
+                    Console.WriteLine(vehicles.Sum(x => x?.Expense ?? 0));
                 }
                 catch(Exception ex)
                 {
